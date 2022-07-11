@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+}
+
+.img {
+    width: 100%;
+    height: 650px;
+    background: url('/public/img/gradient.jpg');
+    background-size: cover;
+    padding: 50px 7%;
+}
+
+.title-cn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.h1 {
+    color: #fff;
+    font-size: 90px;
+    line-height: 1;
+}
+
+.nav-cn {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-cn-res {
+    display: none;
+}
+
+.a_nav-cn {
+    display: flex;
+    gap: 25px;
+}
+
+    .a_nav {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 23px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+.btn-cn {
+    display: flex;
+    gap: 20px;
+}
+
+    .a_btn {
+        text-decoration: none;
+    }
+
+    .btn {
+        font-size: 23px;
+        padding: 7px;
+        background: none;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+        height: 40px;
+    }
+        .material-symbols-outlined {
+            user-select: none;
+        }
+
+    .l-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.200);
+        transition: background .2s;
+    }
+        .l-btn:hover {
+            background: rgba(255, 255, 255, 0.400);
+            transition: background .2s;
+        }
+
+    .s-btn {
+        border: 1px solid rgba(255, 255, 255, 0.200);
+        transition: border .2s;
+    }
+        .s-btn:hover {
+            border-color: rgba(255, 255, 255, 0.400);
+            transition: border .2s;
+        }
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 150px  7%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.h1-2 {
+    /* background: url(/gradient.jpg);
+    background-size: 150%;
+    -webkit-background-clip: text; */
+    color: #222;
+    font-size: 90px;
+    line-height: 1;
+}
+
+.title-cn-2 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.p-2 {
+    margin-top: 30px;
+    max-width: 400px;
+    font-size: 24px;
+}
+
+.btn-m-i {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 50px;
+    width: 220px;
+    background: url(/public/img/gradient.jpg);
+    background-size: 170%;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 1;
+}
+
+.on {
+    animation: anim_btn-m-i-1 .4s forwards;
+}
+
+.off  {
+    animation: anim_btn-m-i-2 .4s forwards;
+}
+
+@keyframes anim_btn-m-i-1 {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(7px);
+    }
+}
+
+@keyframes anim_btn-m-i-2 {
+    from {
+        transform: translateX(7px);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+.gradients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-s-2 {
+    width: 350px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1791px) {
+    .section-2 {
+        justify-content: center;
+        padding: 150px 50px;
+    }
+
+    .h1-2 {
+        text-align: center;
+    }
+
+    .p-2 {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .btn-m-i {
+        margin: 20px auto;
+    }
+
+    .img-s-2 {
+        width: 33%;
+        height: 23vmin;
+    }
+}
+
+@media (max-width: 500px) {
+    .h1 {
+        font-size: 68px;
+    }
+
+    .h1-2 {
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width: 824px) {
+    .nav-cn {
+        display: none;
+    }
+
+    .menu-symbol {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .section-2 {
+        justify-content: center;
+        padding: 70px 50px;
+    }
+}
