@@ -17,14 +17,15 @@
 
 .title-cn {
     display: flex;
-    align-items: center;
-    height: 100%;
+    align-items: center ;
+    height: 90%;
 }
 
 .h1 {
     color: #fff;
     font-size: 90px;
     line-height: 1;
+    transition: font-size .2s;
 }
 
 .nav-cn {
@@ -57,7 +58,7 @@
 
 .btn-cn {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
     .a_btn {
@@ -98,6 +99,30 @@
             transition: border .2s;
         }
 
+    .btn-g-s {
+        width: 200px;
+        height: 55px;
+        margin-top: 30px;
+        font-size: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.200);
+        transition: border .2s, background .2s;
+    }
+        .btn-g-s:hover {
+            background: rgba(255, 255, 255, 0.100);
+            border: 1px solid rgba(255, 255, 255, 0);
+            transition: border .2s, background .2s;
+        }
+
+        .btn-g-s:active {
+            background: rgba(255, 255, 255, 0.400);
+            transition: background .2s;
+        }
+
+    .btn-g-s .material-symbols-outlined {
+        margin-left: -5px;
+        font-weight: bold;
+    }
+
 .section-2 {
     display: flex;
     justify-content: space-between;
@@ -114,6 +139,7 @@
     color: #222;
     font-size: 90px;
     line-height: 1;
+    transition: font-size .2s;
 }
 
 .title-cn-2 {
@@ -142,7 +168,12 @@
     border-radius: 3px;
     color: #fff;
     line-height: 1;
+    transition: opacity .2s;
 }
+    .btn-m-i:active {
+        opacity: 0.9;
+        transition: opacity .2s;
+    }
 
 .on {
     animation: anim_btn-m-i-1 .4s forwards;
@@ -209,20 +240,26 @@
 @media (max-width: 500px) {
     .h1 {
         font-size: 68px;
+        transition: font-size .2s;
     }
 
     .h1-2 {
         font-size: 60px;
+        transition: font-size .2s;
     }
 }
 
+.menu-symbol {
+    display: none;
+}
 
 @media (max-width: 824px) {
-    .nav-cn {
+    .a_nav-cn {
         display: none;
     }
 
     .menu-symbol {
+        display: flex;
         font-size: 40px;
         color: #fff;
     }
@@ -230,5 +267,9 @@
     .section-2 {
         justify-content: center;
         padding: 70px 50px;
+    }
+
+    .title-cn {
+        height: 100%;
     }
 }
