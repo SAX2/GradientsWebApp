@@ -6,7 +6,6 @@
     height: 650px;
     background: url('/public/img/gradient-4.jpg');
     background-size: cover;
-    padding: 50px;
 }
 
 .main-container-2 {
@@ -22,7 +21,6 @@
 
 .input-container-2 {
     border-radius: 10px;
-    min-width: 500px;
     width: 700px;
     height: 650px;
     padding: 60px;
@@ -130,31 +128,40 @@
     color: #8956da;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 60px;
-}
+@media (max-width: 750px) {
+    .img-3 {
+        height: 80px;
+    }
+    .main-input-container-2 {
+        position: relative;
+    }
 
-.links {
-    display: flex;
-    gap: 15px;
-}
+    .input-container-2 {
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+        padding: 60px 30px;
+    }
 
-.text-grey {
-    font-size: 17px;
-    display: flex;
-    text-decoration: none;
-    color: #aaa;
-}
 
-.text-grey:hover {
-    text-decoration: underline 1.5px;
-}
+    .main-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-.div-line {
-    height: 100%;
-    width: 1px;
-    background: #aaa
+    .icon-container {
+        display: none;
+    }
+
+    .full-name-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-name-container .input-ph-container {
+        width: 100%;
+    }
 }

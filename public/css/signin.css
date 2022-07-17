@@ -22,7 +22,6 @@
 
 .input-container {
     border-radius: 10px;
-    min-width: 500px;
     width: 700px;
     height: 650px;
     padding: 60px;
@@ -129,31 +128,30 @@
     color: #da5689;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 60px;
-}
+@media (max-width: 750px) {
+    .img-2 {
+        height: 80px;
+    }
+    .main-input-container {
+        position: relative;
+    }
 
-.links {
-    display: flex;
-    gap: 15px;
-}
+    .input-container {
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        padding: 60px 30px;
+    }
 
-.text-grey {
-    font-size: 17px;
-    display: flex;
-    text-decoration: none;
-    color: #aaa;
-}
 
-.text-grey:hover {
-    text-decoration: underline 1.5px;
-}
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-.div-line {
-    height: 100%;
-    width: 1px;
-    background: #aaa
+    .icon-container {
+        display: none;
+    }
 }
