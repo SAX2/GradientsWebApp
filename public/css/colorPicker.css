@@ -1,0 +1,87 @@
+.main-div-home {
+    width: 100%;
+    padding: 50px 7%;
+}
+
+.options-pick-color {
+    display: flex;
+    gap: 60px;
+}
+
+.input-color-picker {
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%, rgba(61,184,154,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%, rgba(61,184,154,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%, rgba(61,184,154,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#3db89a",GradientType=1);
+}
+
+.color-code-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title-color-code h1 {
+    color: #aaa;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.inputs-color-code {
+    display: flex;
+    gap: 40px;
+}
+
+.input-color {
+    text-align: center;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    outline: 1px solid transparent;
+    transition: outline .1s;
+}
+
+    .input-color:active {
+        transition: outline .1s;
+        outline: 2px solid #6822d8;
+    }
+
+.RGBA-container,
+.hastag-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.RGBA-container {
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.input-color-hashtag {
+    width: 130px;
+}
+
+.color-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.RGBA-container p, 
+.hastag-input-container p  {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.input-color-other {
+    width: 60px;
+}
